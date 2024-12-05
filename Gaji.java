@@ -17,28 +17,25 @@ public class Gaji{
         return tunjangan;
     }
 
-    public static int gaji(){
-        int gaji = 0;
+   public static int hitungGaji(){
+        int hitungGaji = 0;
         if (masaKerja < 5) {
-            gaji = 5000000;
+            hitungGaji = 5000000;
         }
         else if (masaKerja >= 5 && masaKerja <= 10) {
-            gaji = 7500000;
+            hitungGaji = 7500000;
         }
         else{
-            gaji = 10000000;
+            hitungGaji = 10000000;
         }
 
-        return gaji;
+        return hitungGaji;
     }
 
     public static void main(String[] args){
 
         Scanner input = new Scanner(System.in);
-        System.out.println("masukan  masa kerja = ");
         masaKerja = input.nextInt();
-
-        System.out.println("masukan  jam lembur = ");
         int jamLembur = input.nextInt();
 
         /* Pekerjaan anda mulai dari sini */
