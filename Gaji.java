@@ -43,7 +43,7 @@ public class Gaji {
         int totalHitungGaji = hitungGaji();
 
         int totalGaji = totalHitungGaji + totalUangLembur;
-        System.out.println("ini adalah total gaji anda = " + totalGaji);
+        System.out.println(totalGaji);
 
         /* Pekerjaan anda berakhir sini */
 
