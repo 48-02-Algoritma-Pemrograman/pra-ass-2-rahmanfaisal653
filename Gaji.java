@@ -31,10 +31,7 @@ public class Gaji {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        System.out.println("masukan  masa kerja = ");
         masaKerja = input.nextInt();
-
-        System.out.println("masukan  jam lembur = ");
         int jamLembur = input.nextInt();
 
         /* Pekerjaan anda mulai dari sini */
