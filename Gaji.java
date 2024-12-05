@@ -4,35 +4,28 @@ public class Gaji {
     public static int masaKerja;
 
     public static int hitungGaji() {
-        int hitungGaji = 0;
-        if (masaKerja > 0) {
 
-            if (masaKerja < 5) {
-                hitungGaji = 5000000;
-            } else if (masaKerja >= 5 && masaKerja <= 10) {
-                hitungGaji = 7500000;
-            } else {
-                hitungGaji = 10000000;
-            }
-
+        if (masaKerja < 5) {
+            return 5000000;
+        } else if (masaKerja >= 5 && masaKerja <= 10) {
+            return 7500000;
+        } else {
+            return 10000000;
         }
-        return hitungGaji;
     }
 
     public static int uangLembur(int jamLembur) {
-        int tunjangan = 0;
-        if (jamLembur > 0) {
+        int tunjangan;
 
-            if (jamLembur < 5) {
-                tunjangan = 40000;
-            } else if (jamLembur >= 5 && jamLembur <= 10) {
-                tunjangan = 50000;
-            } else {
-                tunjangan = 75000;
-            }
-
+        if (masaKerja < 5) {
+            tunjangan = 40000;
+        } else if (masaKerja >= 5 && masaKerja <= 10) {
+            tunjangan = 50000;
+        } else {
+            tunjangan = 75000;
         }
-        return tunjangan;
+
+        return tunjangan * jamLembur;
     }
 
     public static void main(String[] args) {
