@@ -20,16 +20,16 @@ public class Gaji{
    public static int hitungGaji(){
         int hitungGaji = 0;
         if (masaKerja < 5) {
-            hitungGaji = 5000000;
+            gaji = 5000000;
         }
         else if (masaKerja >= 5 && masaKerja <= 10) {
-            hitungGaji = 7500000;
+            gaji = 7500000;
         }
         else{
-            hitungGaji = 10000000;
+            gaji = 10000000;
         }
 
-        return hitungGaji;
+        return gaji;
     }
 
     public static void main(String[] args){
@@ -40,7 +40,7 @@ public class Gaji{
 
         /* Pekerjaan anda mulai dari sini */
 
-        int totalGaji = gaji() + uangLembur(jamLembur);
+        int totalGaji = hitungGaji() + uangLembur(jamLembur);
         System.err.println("ini adalah total gaji anda = " + totalGaji);
 
         /* Pekerjaan anda berakhir sini */
