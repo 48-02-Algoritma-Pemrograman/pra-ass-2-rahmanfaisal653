@@ -25,15 +25,14 @@ public class Hitung {
         return max;
     }
 
-    public static int ratarata(ArrayList<Integer> list) {
-       int rata = 0;
-       for (int angka : list) {
+    public static double ratarata(ArrayList<Integer> list) {
+        double rata = 0;
+        for (int angka : list) {
             rata += angka;
-       }
-       return rata / list.size();
+        }
+        return rata / list.size();
     }
 
-    
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -48,9 +47,9 @@ public class Hitung {
 
         } while (pilihan.equalsIgnoreCase("Y"));
 
-        System.out.println("min = " + minimal(data));
-        System.out.println("max = " + maximal(data));
-        System.out.println("rata = " + ratarata(data));
+        System.out.println("Nilai minimal : " + minimal(data));
+        System.out.println("Nilai maksimal : " + maximal(data));
+        System.out.println("Nilai rata-rata : " + ratarata(data));
 
         /* Pekerjaan anda berakhir sini */
 
